@@ -3,6 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
 
@@ -44,4 +45,24 @@ public class Main {
         }
     }
 
+    public static void task4() {
+        System.out.println("Задача 4");
+        int deliveryDistance = 101;
+        int deliveryTime1 = 1;
+        int deliveryTime2 = 2;
+        int deliveryTime3 = 3;
+        String noDelivery = "Доставки нет";
+        if (deliveryDistance < 20) {
+            System.out.println("Потребуется дней: " + deliveryTime1);
+        }
+        if (deliveryDistance > 20 && deliveryDistance < 60) {
+            System.out.println("Потребуется дней: " + deliveryTime2);
+        }
+        if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: " + deliveryTime3);
+        }
+        if (deliveryDistance > 100) {
+            System.out.println(noDelivery);
+        }
+    }
 }
